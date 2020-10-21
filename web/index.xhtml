@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+    <h:head>
+        <title>Login</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <!--===============================================================================================-->	
+        <link rel="icon" type="image/png" href="pages/imagess/icons/favicon.ico"/>
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="pages/vendors/bootstrap/css/bootstrap.min.css"/>
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="pages/fontss/font-awesome-4.7.0/css/font-awesome.min.css"/>
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="pages/fontss/iconic/css/material-design-iconic-font.min.css"/>
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="pages/vendors/animate/animate.css"/>
+        <!--===============================================================================================-->	
+        <link rel="stylesheet" type="text/css" href="pages/vendors/css-hamburgers/hamburgers.min.css"/>
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="pages/vendors/animsition/css/animsition.min.css"/>
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="pages/vendors/select2/select2.min.css"/>
+        <!--===============================================================================================-->	
+        <link rel="stylesheet" type="text/css" href="pages/vendors/daterangepicker/daterangepicker.css"/>
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="pages/csss/util.css"/>
+        <link rel="stylesheet" type="text/css" href="pages/csss/main.css"/>
+        <!--===============================================================================================-->
+    </h:head>
+    <h:body>
+
+        <div class="limiter">
+            <div class="container-login100" style="background-image: url('pages/imagess/bg-02.jpg');">
+                <div class="wrap-login100">
+                    <h:form class="login100-form validate-form">
+                        <span class="login100-form-logo">
+                            <i class="zmdi zmdi-landscape"></i>
+                        </span>
+
+                        <span class="login100-form-title p-b-34 p-t-27">
+                            Log in
+                        </span>
+
+                        <div class="wrap-input100 validate-input" data-validate = "Enter username">
+                            <h:inputText value="#{userModel.username}" class="input100" a:placeholder="Username"/>
+                            <span class="focus-input100" data-placeholder="&#xf207;"></span>
+                        </div>
+
+                        <div class="wrap-input100 validate-input" data-validate="Enter password">
+                            <h:inputSecret value="#{userModel.password}" class="input100" a:placeholder="Password"/>
+                            <span class="focus-input100" data-placeholder="&#xf191;"></span>
+                        </div>
+
+
+                        <div class="container-login100-form-btn">
+                            <h:commandButton action="#{userModel.login()}" value="Login" class="login100-form-btn">
+
+                            </h:commandButton>
+                        </div>
+
+                        <div class="text-center p-t-90">
+                            <a class="txt1" href="faces/register.xhtml">
+                                <h4>Register</h4>
+                            </a>
+                        </div>
+                    </h:form>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="dropDownSelect1"></div>
+
+        <!--===============================================================================================-->
+        <script src="pages/vendors/jquery/jquery-3.2.1.min.js"></script>
+        <!--===============================================================================================-->
+        <script src="pages/vendors/animsition/js/animsition.min.js"></script>
+        <!--===============================================================================================-->
+        <script src="pages/vendors/bootstrap/js/popper.js"></script>
+        <script src="pages/vendors/bootstrap/js/bootstrap.min.js"></script>
+        <!--===============================================================================================-->
+        <script src="pages/vendors/select2/select2.min.js"></script>
+        <!--===============================================================================================-->
+        <script src="pages/vendors/daterangepicker/moment.min.js"></script>
+        <script src="pages/vendors/daterangepicker/daterangepicker.js"></script>
+        <!--===============================================================================================-->
+        <script src="pages/vendors/countdowntime/countdowntime.js"></script>
+        <!--===============================================================================================-->
+        <script src="pages/jss/main.js"></script>
+
+    </h:body>
+</html>
